@@ -4,9 +4,120 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Small Cities</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="src/sass/main.scss" />
+    <script type="module" src="src/js/controller.js"></script>
+
+    <title>Travel</title>
 </head>
 <body>
-    
+    <header>
+        <nav class="nav">
+            <span class="nav__logo">Travel</span>
+            <div>
+                <ul class="nav__links">
+                    <li><a class="nav__link" href="#">About us</a></li>
+                    <li><a class="nav__link" href="#">Popular places</a></li>
+                    <li><a class="nav__link" href="#">Testimonials</a></li>
+                    <li><a class="nav__link btn" href="#">Receive news</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="header__title">
+            <div class="header__title-box">
+                <h1 class="header__title-main">
+                    <span class="heading-primary--main">The best places for</span><br>
+                    <span class="heading-primary--sub">The best people</span>
+                </h1>
+                <div class="header__title-sub">
+                    <p class="header__title-information">discover the best places you can travel</p>
+                    <button class="header__title-btn">Learn more ↓</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="section section-1" id="section--1">
+        <div class="section__title">
+            <h2 class="section__description">About us</h2>
+            <h3 class="section__header">Best place to find a new trip</h3>
+        </div>
+        <div class="section__box">
+            <img src="./src/img/pexels-leah-kelley-3935702.jpg" alt="Travel" class="section__img">
+            <div class="section__box-text">
+                <h5 class="section__main-header">who we are?</h5>
+                <p class="section__main-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo tenetur corporis porro. Placeat quisquam alias exercitationem nostrum, numquam obcaecati illo amet consectetur assumenda sunt delectus? Labore unde doloremque dicta consequatur!</p>  
+            </div>
+        </div>
+    </section>
+    <section class="section section-2" id="section--2">
+        <div class="section__title">
+            <h2 class="section__description">Popular places</h2>
+            <h3 class="section__header">Find the place with the best feedback </h3>
+        </div>
+        <div class="place__box">
+            <div class="place__box-information">
+                <div class="place__box-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+                        <path d="M24 44q-4.2 0-7.85-1.575Q12.5 40.85 9.8 38.15q-2.7-2.7-4.25-6.375Q4 28.1 4 23.9t1.55-7.825Q7.1 12.45 9.8 9.75t6.35-4.225Q19.8 4 24 4q4.2 0 7.85 1.525Q35.5 7.05 38.2 9.75q2.7 2.7 4.25 6.325Q44 19.7 44 23.9t-1.55 7.875Q40.9 35.45 38.2 38.15t-6.35 4.275Q28.2 44 24 44Zm0-2.9q1.75-1.8 2.925-4.125Q28.1 34.65 28.85 31.45H19.2q.7 3 1.875 5.4Q22.25 39.25 24 41.1Zm-4.25-.6q-1.25-1.9-2.15-4.1-.9-2.2-1.5-4.95H8.6Q10.5 35 13 37.025q2.5 2.025 6.75 3.475Zm8.55-.05q3.6-1.15 6.475-3.45 2.875-2.3 4.625-5.55h-7.45q-.65 2.7-1.525 4.9-.875 2.2-2.125 4.1Zm-20.7-12h7.95q-.15-1.35-.175-2.425-.025-1.075-.025-2.125 0-1.25.05-2.225.05-.975.2-2.175h-8q-.35 1.2-.475 2.15T7 23.9q0 1.3.125 2.325.125 1.025.475 2.225Zm11.05 0H29.4q.2-1.55.25-2.525.05-.975.05-2.025 0-1-.05-1.925T29.4 19.5H18.65q-.2 1.55-.25 2.475-.05.925-.05 1.925 0 1.05.05 2.025.05.975.25 2.525Zm13.75 0h8q.35-1.2.475-2.225Q41 25.2 41 23.9q0-1.3-.125-2.25T40.4 19.5h-7.95q.15 1.75.2 2.675.05.925.05 1.725 0 1.1-.075 2.075-.075.975-.225 2.475Zm-.5-11.95h7.5q-1.65-3.45-4.525-5.75Q32 8.45 28.25 7.5q1.25 1.85 2.125 4t1.525 5Zm-12.7 0h9.7q-.55-2.65-1.85-5.125T24 7q-1.6 1.35-2.7 3.55-1.1 2.2-2.1 5.95Zm-10.6 0h7.55q.55-2.7 1.4-4.825.85-2.125 2.15-4.125-3.75.95-6.55 3.2T8.6 16.5Z"/>
+                    </svg>
+                </div>
+                <h3 class="section__main-header">Explore the world</h3>
+                <p class="section__main-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
+                </p>
+            </div>
+            <div class="place__box-information">
+                <div class="place__box-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+                        <path d="M0 36v-2.65q0-1.95 2.1-3.15T7.5 29q.65 0 1.2.025.55.025 1.1.125-.4.85-.6 1.725-.2.875-.2 1.875V36Zm12 0v-3.25q0-3.25 3.325-5.25t8.675-2q5.4 0 8.7 2 3.3 2 3.3 5.25V36Zm27 0v-3.25q0-1-.175-1.875t-.575-1.725q.55-.1 1.1-.125Q39.9 29 40.5 29q3.4 0 5.45 1.2Q48 31.4 48 33.35V36Zm-15-7.5q-4 0-6.5 1.2T15 32.75V33h18v-.3q0-1.8-2.475-3T24 28.5Zm-16.5-1q-1.45 0-2.475-1.025Q4 25.45 4 24q0-1.45 1.025-2.475Q6.05 20.5 7.5 20.5q1.45 0 2.475 1.025Q11 22.55 11 24q0 1.45-1.025 2.475Q8.95 27.5 7.5 27.5Zm33 0q-1.45 0-2.475-1.025Q37 25.45 37 24q0-1.45 1.025-2.475Q39.05 20.5 40.5 20.5q1.45 0 2.475 1.025Q44 22.55 44 24q0 1.45-1.025 2.475Q41.95 27.5 40.5 27.5ZM24 24q-2.5 0-4.25-1.75T18 18q0-2.55 1.75-4.275Q21.5 12 24 12q2.55 0 4.275 1.725Q30 15.45 30 18q0 2.5-1.725 4.25T24 24Zm0-9q-1.25 0-2.125.85T21 18q0 1.25.875 2.125T24 21q1.3 0 2.15-.875Q27 19.25 27 18q0-1.3-.85-2.15Q25.3 15 24 15Zm0 18Zm0-15Z"/>
+                    </svg>
+                </div>
+                <h3 class="section__main-header">Meet new people</h3>
+                <p class="section__main-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
+                </p>
+            </div>
+            <div class="place__box-information">
+                <div class="place__box-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+                        <path d="M35 44V28h-5.75V12.75q0-3.95 2.4-6.35Q34.05 4 38 4v40Zm-20.75 0V25.6q-2.6-.55-4.425-2.625Q8 20.9 8 18V4h3v14h3.25V4h3v14h3.25V4h3v14q0 2.9-1.825 4.975Q19.85 25.05 17.25 25.6V44Z"/>
+                    </svg>
+                </div>
+                <h3 class="section__main-header">Try new food</h3>
+                <p class="section__main-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="section section-3 tertimonials" id="section--3">
+        <div class="section__title">
+            <h2 class="section__description">Testimonials</h2>
+            <h3 class="section__header">testimonials from people who use our website</h3>
+        </div>
+        <div class="slider">
+            <div class="slide">
+                <div class="testimonial">
+                  <h5 class="testimonial__header">The best place!</h5>
+                  <blockquote class="testimonial__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Accusantium quas quisquam non? Quas voluptate nulla minima
+                    deleniti optio ullam nesciunt, numquam corporis et asperiores
+                    laboriosam sunt, praesentium suscipit blanditiis. Necessitatibus
+                    id alias reiciendis, perferendis facere pariatur dolore veniam
+                    autem esse non voluptatem saepe provident nihil molestiae.
+                  </blockquote>
+                  <address class="testimonial__author">
+                    <img src="./src/img/pexels-andrea-piacquadio-3777943.jpg" alt="testimonial" class="testimonial__photo">
+                    <h6 class="testimonial__name">Olive Yew.</h6>
+                    <p class="testimonial__location">Ohio, USA</p>
+                  </address>
+                </div>
+            </div>
+            <button class="slider__btn slider__btn--left">←</button>
+            <button class="slider__btn slider__btn--right">→</button>
+        </div>
+    </section>
 </body>
 </html>

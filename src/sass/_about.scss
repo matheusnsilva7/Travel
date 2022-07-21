@@ -1,0 +1,13 @@
+.section{
+    &__box{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 4rem;
+        margin: 0 12rem;
+        align-items: center;
+    }
+    &__img{
+        height:33rem;
+        width:55rem
+    }
+}
