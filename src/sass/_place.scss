@@ -1,9 +1,18 @@
 .place__box{
     display:grid;
+    width: 90rem;
     grid-template-columns: repeat(3,1fr);
-    margin: 0 12rem;
+    margin: 0 auto;
     gap: 4rem;
     transform: translateY(2rem);
+    @media (max-width:950px) {
+        display: block;
+        width:50vh;
+
+        & > *:not(:last-child){
+            margin-bottom: 4rem;
+        }
+    }
     & > *:hover{
         transform: translateY(-2rem);
     }

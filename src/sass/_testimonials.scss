@@ -4,7 +4,9 @@
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    
+    @media (max-width:400px) {
+        height:70rem
+    }
     &__btn {
         position: absolute;
         top: 30%;
@@ -25,10 +27,6 @@
             right: 6%;
             transform: translate(50%, -50%);
         }
-        &:hover{
-            border-radius:50%;
-            background: rgba(255, 255, 255, 0.7);
-        }
     }
     
 }
@@ -41,6 +39,10 @@
     align-items: center;
     justify-content: center;
     transition: transform 1s;
+
+    @media (max-width:400px) {
+        height:70rem
+    }
 }
 .testimonial {
     width: 65%;
@@ -49,16 +51,15 @@
     &__author {
         margin-left: 3rem;
         font-style: normal;
-        display: grid;
-        grid-template-columns: 6.5rem 1fr;
-        column-gap: 2rem;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
     }
     &__photo {
-        grid-row: 1 / span 2;
         width: 6.5rem;
         border-radius: 50%;
     }
-    &__location {
-        font-size: 1.5rem;
+    &__name{
+        padding-bottom: 2rem;
     }
 }

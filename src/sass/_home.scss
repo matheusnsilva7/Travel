@@ -11,7 +11,32 @@ header{
     &__links{
         display:flex;
         gap:4rem;
+        @media (max-width:950px) {
+            display:none;
+        }
     }
+    &__mobile{
+        display:none;
+
+        @media (max-width:950px) {
+            display:block;
+            background-color: $color-white;
+            height: 6rem;
+            width: 6rem;
+            position: fixed;
+            top: 6rem;
+            right: 6rem;
+            border-radius: 50%;
+            z-index: 2000;
+            box-shadow: 0 1rem 3rem rgba($color-black, .1);
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+    @media (max-width:950px) {
+        padding:0 3rem;
+    }
+    
 }
 .sticky {
     position: fixed;
@@ -33,5 +58,17 @@ header{
     &-3{
         background-color:$color-grey-light-2;
     }
-    
+    &-4{
+        background-color: $color-grey-dark-3 ;
+        text-align: center;
+    }
+    &__title{
+        @media (max-width:950px) {
+            margin: 0 auto 4rem;
+        }
+    }
+}
+.footer{
+    background-color: $color-grey-dark-3 ;
+    margin: 0 auto;
 }
