@@ -11,8 +11,12 @@ header{
     &__links{
         display:flex;
         gap:4rem;
-        @media (max-width:950px) {
-            display:none;
+        @media (max-width:950px){
+            margin-top: 20rem;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 20;
         }
     }
     &__mobile{
@@ -24,27 +28,96 @@ header{
             height: 6rem;
             width: 6rem;
             position: fixed;
-            top: 6rem;
+            top: 1.5rem;
             right: 6rem;
             border-radius: 50%;
-            z-index: 2000;
+            z-index: 10;
             box-shadow: 0 1rem 3rem rgba($color-black, .1);
             text-align: center;
             cursor: pointer;
         }
+        @media (max-width:500px) {
+            right: 4rem;
+        }
+        &-links{
+            margin:0 auto;
+            height:.3rem;
+            width:4rem;
+            background-color: $color-grey-dark-3;
+            z-index: 20;
+            margin-top: 50%;
+        }
+        &-links::after,
+        &-links::before{
+            content:"";
+            display:block;
+            margin:0 auto;
+            height:.3rem;
+            width:4rem;
+            background-color: $color-grey-dark-3;
+            z-index: 20;
+        }
+        &-links::after{
+            transform: translateY(.7rem);
+        }
+        &-links::before{
+            transform: translateY(-1rem);
+        }
+        &-box{
+            @media (max-width:950px){
+                position: fixed;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 7;
+                display:none;
+            }
+        }
+        &-background{
+            background-color: $color-primary;
+            position:fixed;
+            top: 0;
+            right: 0;
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            z-index: 5;
+    
+            transform: scale(0);
+        }
     }
-    @media (max-width:950px) {
-        padding:0 3rem;
+    @media (max-width:500px) {
+        padding:0;
     }
     
 }
+.clicked{
+    background-color:transparent;
+    &::after{
+        transform: rotate(135deg) translateY(.2rem);
+    }
+    &::before{
+        transform: rotate(-135deg);
+    }
+}
+.active{
+    display:block
+}
 .sticky {
+    @media(min-width:950px){
+    background-color: #fffffff2;
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.95);
-    color: $color-black;
+    top: 0;
+    left: 0;
+    width: 85vw;
+    padding: 0 10rem;
+    color: black
+    }
 }
 .section{
     padding: 8rem 3rem;
+    transition: all 2s;
     &__title{
         max-width: 80rem;
         margin: 0 auto 8rem auto;
@@ -72,3 +145,7 @@ header{
     background-color: $color-grey-dark-3 ;
     margin: 0 auto;
 }
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+  }

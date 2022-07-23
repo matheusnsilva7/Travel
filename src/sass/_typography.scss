@@ -17,6 +17,7 @@ a{
         color: $color-grey-light-2;
         font-size: 4rem;
         cursor: pointer;
+        z-index: 30;
     }
     &__link{
         &:link,
@@ -25,7 +26,12 @@ a{
             font-weight: 400;
             color: $color-grey-light-2;
             transition: all 0.3s;
-        } 
+            z-index:30;
+            @media (max-width:950px){
+                font-size: 2rem;
+                text-transform: uppercase;
+            }
+        }
     }
 }
 .btn{
@@ -135,4 +141,13 @@ h1{
             background-color: $color-white;
         }
     }
+}
+.nav__sticky:link,
+.nav__sticky:visited{
+    color: $color-black;
+}
+.nav__sticky-btn:link,
+.nav__sticky-btn:visited{
+    background-color: $color-primary;
+    color:$color-white;
 }
