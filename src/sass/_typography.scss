@@ -17,7 +17,7 @@ a{
         color: $color-grey-light-2;
         font-size: 4rem;
         cursor: pointer;
-        z-index: 30;
+        z-index: 4;
     }
     &__link{
         &:link,
@@ -104,21 +104,36 @@ h1{
         }
     }
 }
-.testimonial__header {
-    font-size: 2.25rem;
-    font-weight: 500;
-    margin-bottom: 1.5rem;
+.testimonial{
+    &__header {
+        font-size: 2.25rem;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+    }
+    &__text {
+        font-size: 1.7rem;
+        margin-bottom: 3.5rem;
+        color: #666;
+    }
+    &__name {
+        font-size: 1.7rem;
+        font-weight: 500;
+        align-self: end;
+        margin: 0;
+    }
 }
-.testimonial__text {
-    font-size: 1.7rem;
-    margin-bottom: 3.5rem;
-    color: #666;
-}
-.testimonial__name {
-    font-size: 1.7rem;
-    font-weight: 500;
-    align-self: end;
-    margin: 0;
+.form{
+    &__header{
+        color:$color-primary;
+        font-size: 2.5rem;
+    }
+    &-btn{
+        border:none;
+        color:white;
+        background-color: $color-primary;
+        margin: 2rem auto;
+        padding:1.5rem 4rem;
+    }
 }
 .learn__container{
     &-header{
@@ -141,13 +156,4 @@ h1{
             background-color: $color-white;
         }
     }
-}
-.nav__sticky:link,
-.nav__sticky:visited{
-    color: $color-black;
-}
-.nav__sticky-btn:link,
-.nav__sticky-btn:visited{
-    background-color: $color-primary;
-    color:$color-white;
 }

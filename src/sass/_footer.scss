@@ -21,6 +21,8 @@
                 fill:$color-primary;
             }
         }
-        
+    }
+    &_svg{
+        transform: scale(.7);
     }
 }

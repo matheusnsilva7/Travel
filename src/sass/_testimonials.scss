@@ -13,7 +13,7 @@
     &__btn {
         position: absolute;
         top: 30%;
-        z-index: 5;
+        z-index: 4;
         border: none;
         font-family: inherit;
         color: #333;
@@ -73,6 +73,12 @@
     left: 50%;
     transform: translateX(-50%);
     display: flex;
+    @media (max-width:500px) {
+        bottom: 0
+    }
+    @media (max-width:400px) {
+        bottom: -10px
+    }
 
     &__dot {
         border: none;
