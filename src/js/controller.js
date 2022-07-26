@@ -32,11 +32,12 @@ navLinks.addEventListener("click", function(e){
         document.querySelector(id).scrollIntoView({ behavior: "smooth" });
     };
 });
+
 const navMobile= function(){
   mobileLinks.classList.toggle("clicked");
-  navBackground.classList.toggle("background")
+  navBackground.classList.toggle("background");
   setTimeout(()=>{
-    document.querySelector(".nav__mobile-box").classList.toggle("active")
+    document.querySelector(".nav__mobile-box").classList.toggle("active");
   },250);
 }
 
@@ -44,32 +45,32 @@ btnMobile.addEventListener("click",navMobile);
 links.forEach(e => {
   e.addEventListener("click",function(){
     if(window.matchMedia("(max-width: 950px)").matches){
-      navMobile() 
-    }
-  })
+      navMobile();
+    };
+  });
 });
 
 btnNews.forEach(e=> {
   e.addEventListener("click",function(e){
-    e.preventDefault()
+    e.preventDefault();
     news.classList.add("active");
     if(mobileLinks.classList.contains('clicked'))navMobile();
-  })
+  });
 });
 news.addEventListener("click",function(e){
-  if(e.target.classList.contains("news"))news.classList.remove("active")
+  if(e.target.classList.contains("news"))news.classList.remove("active");
 });
 exitNews.addEventListener("click",function(){
-  news.classList.remove("active")
+  news.classList.remove("active");
 });
 
 btnSend.addEventListener("click",function(e){
     e.preventDefault();
-    document.querySelector('.working').classList.add('active')
+    document.querySelector('.working').classList.add('active');
     setTimeout(function(){
-      document.querySelector('.working').classList.remove('active')
-      news.classList.remove("active")
-    },1500)
+      document.querySelector('.working').classList.remove('active');
+      news.classList.remove("active");
+    },1500);
 });
 
 const houver = function(e){
@@ -118,6 +119,7 @@ const revealSection = function (entries, observer) {
     sectionObserver.observe(section);
     section.classList.add("hidden");
   });
+
 const slider = function () {
     let curSlide = 0;
     const maxSlide = slides.length;

@@ -5,10 +5,10 @@
     position: relative;
     overflow: hidden;
     @media (max-width:600px) {
-        height:55rem
+        height:55rem;
     }
     @media (max-width:400px) {
-        height:70rem
+        height:70rem;
     }
     &__btn {
         position: absolute;
@@ -45,7 +45,7 @@
     transition: transform 1s;
 
     @media (max-width:400px) {
-        height:70rem
+        height:70rem;
     }
 }
 .testimonial {
@@ -74,10 +74,10 @@
     transform: translateX(-50%);
     display: flex;
     @media (max-width:500px) {
-        bottom: 0
+        bottom: 0;
     }
     @media (max-width:400px) {
-        bottom: -10px
+        bottom: -10px;
     }
 
     &__dot {
