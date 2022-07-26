@@ -2,7 +2,7 @@
   "name": "smallcities",
   "version": "1.0.0",
   "description": "travel place",
-  "main": "index.js",
+  "default": "index.js",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.2",
     "parcel": "^2.0.0-rc.0"
