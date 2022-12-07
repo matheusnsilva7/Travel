@@ -1,28 +1,5 @@
-.footer{
-    border-top: 1px solid $color-grey-dark-2;
-    padding: 5rem 3rem;
-    text-align: center;
-
-    &__links{
-        display:flex;
-        gap:5rem;
-        justify-content: center;
-        padding-bottom: 3rem;
-    }
-    &__information{
-        display:flex;
-        justify-content: center;
-        padding-top:2rem;
-        gap:4rem;
-
-        &-link{
-            fill:$color-white;
-            &:hover{
-                fill:$color-primary;
-            }
-        }
-    }
-    &_svg{
-        transform: scale(.7);
-    }
+.footer {
+  border-top: 1px solid $color-grey-dark-2;
+  padding: 5rem 3rem;
+  text-align: center;
 }

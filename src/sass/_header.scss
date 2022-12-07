@@ -1,33 +1,39 @@
-header{
-    height:100vh;
-    background-image: linear-gradient(rgba(0, 255, 234, 0.295), rgba(0, 255, 255, 0.24)), url(../img/pexels-pascal-weiland-2244429.jpg);
-    background-size: cover;
+header {
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(0, 255, 234, 0.295),
+      rgba(0, 255, 255, 0.24)
+    ),
+    url(../img/pexels-pascal-weiland-2244429.jpg);
+  background-size: cover;
+  @media (max-width: 400px) {
+    padding: 0 3rem;
+  }
 }
-.header__title{
-    &-box{
-        position: absolute;
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        width:90vw;
-        overflow: hidden;
+.header__title {
+  &-box {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90vw;
+    overflow: hidden;
+  }
+  &-sub {
+    padding-top: 3rem;
+    animation: moveInBottom 0.7s ease-out;
+  }
+  &-btn {
+    margin-top: 5rem;
+    border: none;
+    border-bottom: solid 2px transparent;
+    background-color: transparent;
+    color: $color-white;
+    line-height: 2;
+    cursor: pointer;
+    &:hover {
+      border-bottom: solid 2px $color-white;
     }
-    &-sub{
-        padding-top:3rem;
-        animation: moveInBottom .7s ease-out;
-    }
-    &-btn{
-        margin-top: 5rem;
-        border:none;
-        border-bottom: solid 2px transparent;
-        background-color: transparent;
-        color: $color-white;  
-        line-height: 2;
-        cursor: pointer;
-        &:hover{
-            border-bottom: solid 2px $color-white;
-        }
-    }
-
+  }
 }
