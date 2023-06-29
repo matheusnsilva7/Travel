@@ -1,5 +1,26 @@
 .footer {
-  border-top: 1px solid $color-grey-dark-2;
   padding: 5rem 3rem;
   text-align: center;
+  display: grid;
+  grid-template-columns: 20rem 20rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff1da;
+  border-top: 1px solid white;
+  & div {
+    padding: 0 2rem;
+    &:first-of-type {
+      border-right: #181e4b solid 2px;
+    }
+  }
+  &__link {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #181e4b;
+    &-main {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #181e4b;
+    }
+  }
 }

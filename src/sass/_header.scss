@@ -1,36 +1,54 @@
 header {
-  height: 100vh;
-  background-image: linear-gradient(
-      rgba(0, 255, 234, 0.295),
-      rgba(0, 255, 255, 0.24)
-    ),
-    url(../img/pexels-pascal-weiland-2244429.jpg);
+  width: 100rem;
+  margin: 0 auto;
   background-size: cover;
+  &::after {
+    content: "";
+    background-color: #fff1da;
+    width: 100%;
+    display: block;
+    clip-path: polygon(51% 0px, 100% 0%, 100% 96%, 55% 43%);
+    border: 50rem;
+    height: 80rem;
+    position: absolute;
+    z-index: -1;
+    top: 0rem;
+    right: 0rem;
+  }
   @media (max-width: 400px) {
-    padding: 0 3rem;
+    padding: 0 .5rem;
+    width: 100%;
   }
 }
 .header__title {
-  &-box {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 90vw;
-    overflow: hidden;
+  width: 100rem;
+  padding: 6rem 0;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  place-content: center;
+  gap: 4rem;
+  &-div{
+    display: grid;
+  place-content: center;
+  gap: 4rem;
+  @media (max-width: 500px) {
+    place-content: start;
+  }
   }
   &-sub {
     padding-top: 3rem;
     animation: moveInBottom 0.7s ease-out;
   }
   &-btn {
-    margin-top: 5rem;
     border: none;
-    border-bottom: solid 2px transparent;
-    background-color: transparent;
+    background-color: #f1a501;
+    text-align: center;
     color: $color-white;
-    line-height: 2;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    width: 17rem;
     cursor: pointer;
     &:hover {
       border-bottom: solid 2px $color-white;

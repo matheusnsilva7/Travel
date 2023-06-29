@@ -1,24 +1,41 @@
 .section {
   &__box {
-    width: 90vw;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(min-content, 50%));
-    gap: 4rem;
+    width: 100rem;
     margin: 0 auto;
-    align-items: center;
+    &-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      text-align: center;
+      gap: 9rem;
+      fill: #f1a501;
+      & h3 {
+        font-size: 1.7rem;
+        font-family: "Open Sans", sans-serif;
+        color: #1e1d4c;
+      }
+      & p {
+        font-size: 1.5rem;
+        font-family: "Poppins", sans-serif;
+        width: 18rem;
+        color: #5e6282;
+        margin: 0 auto;
+      }
+      @media (max-width: 950px) {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+      }
+      @media (max-width: 500px) {
+        grid-template-columns: 1fr;
+      }
+    }
+    @media (max-width: 950px) {
+      width: 40rem;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      width: 30rem;
+    }
+  }
 
-    @media (max-width: 950px) {
-      display: flex;
-      flex-direction: column;
-      width: 70vw;
-    }
-  }
-  &__img {
-    height: 100%;
-    width: 100%;
-    @media (max-width: 950px) {
-      order: 2;
-      height: auto;
-    }
-  }
 }

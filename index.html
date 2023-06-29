@@ -15,7 +15,7 @@
     <title>Travel</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <nav class="nav">
         <a href="#" class="nav__logo">Travel</a>
         <div>
@@ -25,188 +25,134 @@
           <div class="nav__mobile-background"></div>
           <div class="nav__mobile-box">
             <ul class="nav__links">
-              <li><a class="nav__link link" href=".section-1">About us</a></li>
+              <li><a class="nav__link link" href="#section-1">About us</a></li>
               <li>
-                <a class="nav__link link" href=".section-2">Popular places</a>
+                <a class="nav__link link" href="#section-2">Destination</a>
               </li>
               <li>
-                <a class="nav__link link" href=".section-3">Testimonials</a>
+                <a class="nav__link link" href="#section-3">Testimonials</a>
               </li>
               <li>
-                <a class="nav__link btn btn-news" href="#">Receive news</a>
+                <a class="nav__link btn btn-news" href="#section-4"
+                  >Receive news</a
+                >
               </li>
             </ul>
           </div>
         </div>
       </nav>
       <div class="header__title">
-        <div class="header__title-box">
+        <div class="header__title-div">
+          <span class="header__title-span"
+            >Best Destinations around the world</span
+          >
           <h1 class="header__title-main">
-            <span class="heading-primary--main">The best places for</span><br />
-            <span class="heading-primary--sub">The best people</span>
+            Travel, enjoy and live a new and full life
           </h1>
-          <div class="header__title-sub">
-            <p class="header__title-information">
-              discover the best places you can travel
-            </p>
-            <button class="header__title-btn">Learn more ↓</button>
-          </div>
-        </div>
-      </div>
-      <div class="news">
-        <div class="news-box">
-          <form action="#" class="news__form">
-            <div class="exit">
-              <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
-                <path
-                  d="m12.45 37.65-2.1-2.1L21.9 24 10.35 12.45l2.1-2.1L24 21.9l11.55-11.55 2.1 2.1L26.1 24l11.55 11.55-2.1 2.1L24 26.1Z"
-                />
-              </svg>
-            </div>
-            <h2 class="section__header form__header">Receive News</h2>
-
-            <label for="name" class="section__main-description"
-              >Full name</label
-            >
-            <input
-              type="text"
-              name="name"
-              class="news__form__input"
-              placeholder="Full name"
-              id="name"
-              required
-            />
-
-            <label for="email" class="section__main-description"
-              >Email address</label
-            >
-            <input
-              type="email"
-              name="email"
-              class="news__form__input"
-              placeholder="Email address"
-              id="email"
-              required
-            />
-
-            <div class="news__form__radio">
-              <div class="margin">
-                <input
-                  type="radio"
-                  class="news__form__radio-input"
-                  id="weekly"
-                  name="email"
-                  checked
-                />
-                <label
-                  for="weekly"
-                  class="section__main-description news__form__radio-label"
-                >
-                  <span class="news__form__radio-button"></span>
-                  Weekly email
-                </label>
-              </div>
-              <div class="margin">
-                <input
-                  type="radio"
-                  class="news__form__radio-input"
-                  id="monthly"
-                  name="email"
-                />
-                <label
-                  for="monthly"
-                  class="section__main-description news__form__radio-label"
-                >
-                  <span class="news__form__radio-button"></span>
-                  Monthly email
-                </label>
-              </div>
-            </div>
-            <input type="submit" class="form-btn" value="Send" />
-            <div class="working">
-              <span>Still working on it</span>
-            </div>
-          </form>
+          <p class="header__title-information">
+            When you travel, a new silence goes with you, and if you listen, you
+            will hear what your heart would love to say.
+          </p>
+          <a href="#section-2" class="header__title-btn">Find out more</a>
         </div>
       </div>
     </header>
     <section class="section section-1" id="section-1">
       <div class="section__title">
         <h2 class="section__description">About us</h2>
-        <h3 class="section__header">Best place to find a new trip</h3>
+        <h3 class="section__header">We Offer Best Services</h3>
       </div>
       <div class="section__box">
-        <img
-          src="./src/img/pexels-leah-kelley-3935702.jpg"
-          alt="Travel"
-          class="section__img"
-        />
-        <div class="section__box-text">
-          <h5 class="section__main-header">who we are?</h5>
-          <p class="section__main-description">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo
-            tenetur corporis porro. Placeat quisquam alias exercitationem
-            nostrum, numquam obcaecati illo amet consectetur assumenda sunt
-            delectus? Labore unde doloremque dicta consequatur!
-          </p>
+        <div class="section__box-container">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="48"
+              viewBox="0 -960 960 960"
+              width="48"
+            >
+              <path
+                d="M450-770v-150h60v150h-60Zm256 106-42-42 106-107 42 43-106 106Zm64 214v-60h150v60H770ZM450-40v-150h60v150h-60ZM253-665 148-770l42-42 106 106-43 41Zm518 517L664-254l41-41 108 104-42 43ZM40-450v-60h150v60H40Zm151 302-43-42 105-105 22 20 22 21-106 106Zm289-92q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170t-170 70Zm0-60q75 0 127.5-52.5T660-480q0-75-52.5-127.5T480-660q-75 0-127.5 52.5T300-480q0 75 52.5 127.5T480-300Zm0-180Z"
+              />
+            </svg>
+            <h3>Calculated Weather</h3>
+            <p>Built Wicket longer admire do barton vanity itself do in it.</p>
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="48"
+              viewBox="0 -960 960 960"
+              width="48"
+            >
+              <path
+                d="m156-338 29-29 100 14 176-177-329-179 39-39 402 103 168-165q14-14 35-14t35 14q14 14 14 35t-14 35L645-573l103 403-39 38-179-329-176 177 14 100-29 29-65-118-118-65Z"
+              />
+            </svg>
+            <h3>Best Flights</h3>
+            <p>Engrossed listening. Park gate sell they west hard for the.</p>
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="48"
+              viewBox="0 -960 960 960"
+              width="48"
+            >
+              <path
+                d="m80-80 186-520 337 333L80-80Zm101-101 314-112-203-204-111 316Zm376-264-34-34 240-240q32-32 81-32.5t81 31.5l17 17-34 34-19-19q-19-19-44-19.5T800-688L557-445ZM398-600l-34-34 30-30q23-23 21.5-52.5T394-766l-28-28 34-34 26 26q35 35 34.5 87.5T425-627l-27 27Zm81 77-34-34 152-152q19-19 18.5-48.5T596-806l-61-61 34-34 63 63q31 32 32 80.5T633-677L479-523Zm158 159-34-34 47-47q35-35 84-36t84 34l51 51-34 34-52-52q-23-23-48-23t-48 23l-50 50ZM181-181Z"
+              />
+            </svg>
+            <h3>Local Events</h3>
+            <p>
+              Barton vanity itself do in it. Preferd to men it engrossed
+              listening.
+            </p>
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="48"
+              viewBox="0 -960 960 960"
+              width="48"
+            >
+              <path
+                d="m388-80-20-126q-19-7-40-19t-37-25l-118 54-93-164 108-79q-2-9-2.5-20.5T185-480q0-9 .5-20.5T188-521L80-600l93-164 118 54q16-13 37-25t40-18l20-127h184l20 126q19 7 40.5 18.5T669-710l118-54 93 164-108 77q2 10 2.5 21.5t.5 21.5q0 10-.5 21t-2.5 21l108 78-93 164-118-54q-16 13-36.5 25.5T592-206L572-80H388Zm92-270q54 0 92-38t38-92q0-54-38-92t-92-38q-54 0-92 38t-38 92q0 54 38 92t92 38Zm0-60q-29 0-49.5-20.5T410-480q0-29 20.5-49.5T480-550q29 0 49.5 20.5T550-480q0 29-20.5 49.5T480-410Zm0-70Zm-44 340h88l14-112q33-8 62.5-25t53.5-41l106 46 40-72-94-69q4-17 6.5-33.5T715-480q0-17-2-33.5t-7-33.5l94-69-40-72-106 46q-23-26-52-43.5T538-708l-14-112h-88l-14 112q-34 7-63.5 24T306-642l-106-46-40 72 94 69q-4 17-6.5 33.5T245-480q0 17 2.5 33.5T254-413l-94 69 40 72 106-46q24 24 53.5 41t62.5 25l14 112Z"
+              />
+            </svg>
+            <h3>Customization</h3>
+            <p>
+              We deliver outsourced aviation services for military customers
+            </p>
+          </div>
         </div>
       </div>
     </section>
-    <section class="section section-2" id="section--2">
+    <section class="section section-2" id="section-2">
       <div class="section__title">
-        <h2 class="section__description">Popular places</h2>
-        <h3 class="section__header">Find the place with the best feedback</h3>
+        <h2 class="section__description">Destination</h2>
+        <h3 class="section__header">Top Destination</h3>
       </div>
       <div class="place__box">
         <div class="place__box-information">
-          <div class="place__box-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
-              <path
-                d="M24 44q-4.2 0-7.85-1.575Q12.5 40.85 9.8 38.15q-2.7-2.7-4.25-6.375Q4 28.1 4 23.9t1.55-7.825Q7.1 12.45 9.8 9.75t6.35-4.225Q19.8 4 24 4q4.2 0 7.85 1.525Q35.5 7.05 38.2 9.75q2.7 2.7 4.25 6.325Q44 19.7 44 23.9t-1.55 7.875Q40.9 35.45 38.2 38.15t-6.35 4.275Q28.2 44 24 44Zm0-2.9q1.75-1.8 2.925-4.125Q28.1 34.65 28.85 31.45H19.2q.7 3 1.875 5.4Q22.25 39.25 24 41.1Zm-4.25-.6q-1.25-1.9-2.15-4.1-.9-2.2-1.5-4.95H8.6Q10.5 35 13 37.025q2.5 2.025 6.75 3.475Zm8.55-.05q3.6-1.15 6.475-3.45 2.875-2.3 4.625-5.55h-7.45q-.65 2.7-1.525 4.9-.875 2.2-2.125 4.1Zm-20.7-12h7.95q-.15-1.35-.175-2.425-.025-1.075-.025-2.125 0-1.25.05-2.225.05-.975.2-2.175h-8q-.35 1.2-.475 2.15T7 23.9q0 1.3.125 2.325.125 1.025.475 2.225Zm11.05 0H29.4q.2-1.55.25-2.525.05-.975.05-2.025 0-1-.05-1.925T29.4 19.5H18.65q-.2 1.55-.25 2.475-.05.925-.05 1.925 0 1.05.05 2.025.05.975.25 2.525Zm13.75 0h8q.35-1.2.475-2.225Q41 25.2 41 23.9q0-1.3-.125-2.25T40.4 19.5h-7.95q.15 1.75.2 2.675.05.925.05 1.725 0 1.1-.075 2.075-.075.975-.225 2.475Zm-.5-11.95h7.5q-1.65-3.45-4.525-5.75Q32 8.45 28.25 7.5q1.25 1.85 2.125 4t1.525 5Zm-12.7 0h9.7q-.55-2.65-1.85-5.125T24 7q-1.6 1.35-2.7 3.55-1.1 2.2-2.1 5.95Zm-10.6 0h7.55q.55-2.7 1.4-4.825.85-2.125 2.15-4.125-3.75.95-6.55 3.2T8.6 16.5Z"
-              />
-            </svg>
-          </div>
-          <h3 class="section__main-header">Explore the world</h3>
-          <p class="section__main-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
-            ipsum sapiente aspernatur.
-          </p>
+          <img src="./src/img/pexels-athena-6580703.jpg" alt="rio" />
+          <span>Christ the Redeemer</span>
         </div>
         <div class="place__box-information">
-          <div class="place__box-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
-              <path
-                d="M0 36v-2.65q0-1.95 2.1-3.15T7.5 29q.65 0 1.2.025.55.025 1.1.125-.4.85-.6 1.725-.2.875-.2 1.875V36Zm12 0v-3.25q0-3.25 3.325-5.25t8.675-2q5.4 0 8.7 2 3.3 2 3.3 5.25V36Zm27 0v-3.25q0-1-.175-1.875t-.575-1.725q.55-.1 1.1-.125Q39.9 29 40.5 29q3.4 0 5.45 1.2Q48 31.4 48 33.35V36Zm-15-7.5q-4 0-6.5 1.2T15 32.75V33h18v-.3q0-1.8-2.475-3T24 28.5Zm-16.5-1q-1.45 0-2.475-1.025Q4 25.45 4 24q0-1.45 1.025-2.475Q6.05 20.5 7.5 20.5q1.45 0 2.475 1.025Q11 22.55 11 24q0 1.45-1.025 2.475Q8.95 27.5 7.5 27.5Zm33 0q-1.45 0-2.475-1.025Q37 25.45 37 24q0-1.45 1.025-2.475Q39.05 20.5 40.5 20.5q1.45 0 2.475 1.025Q44 22.55 44 24q0 1.45-1.025 2.475Q41.95 27.5 40.5 27.5ZM24 24q-2.5 0-4.25-1.75T18 18q0-2.55 1.75-4.275Q21.5 12 24 12q2.55 0 4.275 1.725Q30 15.45 30 18q0 2.5-1.725 4.25T24 24Zm0-9q-1.25 0-2.125.85T21 18q0 1.25.875 2.125T24 21q1.3 0 2.15-.875Q27 19.25 27 18q0-1.3-.85-2.15Q25.3 15 24 15Zm0 18Zm0-15Z"
-              />
-            </svg>
-          </div>
-          <h3 class="section__main-header">Meet new people</h3>
-          <p class="section__main-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
-            ipsum sapiente aspernatur.
-          </p>
+          <img src="./src/img/pexels-louis-1530259.jpg" alt="" />
+          <span>Eiffel tower</span>
         </div>
         <div class="place__box-information">
-          <div class="place__box-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
-              <path
-                d="M35 44V28h-5.75V12.75q0-3.95 2.4-6.35Q34.05 4 38 4v40Zm-20.75 0V25.6q-2.6-.55-4.425-2.625Q8 20.9 8 18V4h3v14h3.25V4h3v14h3.25V4h3v14q0 2.9-1.825 4.975Q19.85 25.05 17.25 25.6V44Z"
-              />
-            </svg>
-          </div>
-          <h3 class="section__main-header">Try new food</h3>
-          <p class="section__main-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
-            ipsum sapiente aspernatur.
-          </p>
+          <img src="./src/img/pexels-rafael-nicida-14683048.jpg" alt="" />
+          <span>The Colosseum</span>
         </div>
       </div>
     </section>
-    <section class="section section-3 tertimonials" id="section--3">
+    <section class="section section-3 tertimonials" id="section-3">
       <div class="section__title">
         <h2 class="section__description">Testimonials</h2>
         <h3 class="section__header">
-          testimonials from people who use our website
+          Testimonials from people who use our site
         </h3>
       </div>
       <div class="slider">
@@ -273,23 +219,66 @@
             </address>
           </div>
         </div>
-        <button class="slider__btn slider__btn--left">←</button>
-        <button class="slider__btn slider__btn--right">→</button>
+        <button class="slider__btn slider__btn--left">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="48"
+            viewBox="0 -960 960 960"
+            width="48"
+          >
+            <path d="M400-80 0-480l400-400 56 57-343 343 343 343-56 57Z" />
+          </svg>
+        </button>
+        <button class="slider__btn slider__btn--right">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="48"
+            viewBox="0 -960 960 960"
+            width="48"
+          >
+            <path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z" />
+          </svg>
+        </button>
         <div class="dots"></div>
       </div>
     </section>
-    <section class="section section-4 learn">
+    <section class="section section-4 learn" id="section-4">
       <h4 class="learn__container-header">
-        receive news about places, trips, activities for your next adventure
+        Sign up for information and the latest news on places to travel.
       </h4>
-      <a href="#" class="learn__container-btn btn-news">Receive news</a>
+      <form action="#" class="news__form">
+        <input
+          type="email"
+          name="email"
+          class="news__form__input"
+          placeholder="Email address"
+          id="email"
+          required
+        />
+        <input type="submit" class="form-btn" value="Send" />
+      </form>
     </section>
     <footer class="footer">
-      <a href="#" class="nav__logo">Travel</a>
-      <p class="section__main-description">
-        We hope you enjoyed our site, and I hope it gave you new ideas for your
-        next trip
-      </p>
+      <div>
+        <a href="#" class="nav__logo">Travel</a>
+        <p class="section__main-description">
+          We hope you enjoyed our site, and I hope it gave you new ideas for
+          your next trip
+        </p>
+      </div>
+      <div>
+        <ul class="footer__links">
+          <li><a class="footer__link-main" href="#header">Home</a></li>
+          <li></li>
+          <li><a class="footer__link" href="#section-1">About us</a></li>
+          <li>
+            <a class="footer__link" href="#section-2">Destination</a>
+          </li>
+          <li>
+            <a class="footer__link" href="#section-3">Testimonials</a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>

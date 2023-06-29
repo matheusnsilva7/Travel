@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Volkhov:wght@400;700&display=swap');
 *,
 *::after,
 *::before {
@@ -6,8 +7,11 @@
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 body {
   box-sizing: border-box;
   max-width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
 }
