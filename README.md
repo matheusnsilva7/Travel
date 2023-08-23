@@ -10,7 +10,7 @@ Welcome to the Travel Website! This simple website showcases various travel dest
 
 ## Demo
 
-Explore the live demo of the Travel Website: [https://travel-website.netlify.app](https://travel-website.netlify.app)
+Explore the live demo of the Travel Website: [https://travel-matheusnsilva7.netlify.app/](https://travel-matheusnsilva7.netlify.app/)
 
 ## Usage
 
