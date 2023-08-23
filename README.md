@@ -16,7 +16,3 @@ Explore the live demo of the Travel Website: [https://travel-matheusnsilva7.netl
 
 1. Open your web browser and visit the live demo link.
 2. Browse through the destinations to get inspired for your travels.
-
-## Contact
-
-For any inquiries or feedback, you can reach out to me.
