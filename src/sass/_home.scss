@@ -255,9 +255,13 @@
   transform: translateY(5rem);
 }
 .airplane {
+  top: -3rem;
+  right: -4rem;
+  transform: rotate(-6deg);
   width: 46rem;
-  height: 20rem;
-  transform: rotate(-49deg);
+  height: 43rem;
+  position: absolute;
+  padding-bottom: 2rem;
   @media (max-width: 1000px) {
     display: none;
   }
