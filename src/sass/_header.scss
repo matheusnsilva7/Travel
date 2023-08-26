@@ -1,5 +1,5 @@
 header {
-  width: 100rem;
+  width: 97rem;
   margin: 0 auto;
   background-size: cover;
   &::after {
@@ -15,26 +15,30 @@ header {
     top: 0rem;
     right: 0rem;
   }
-  @media (max-width: 400px) {
-    padding: 0 .5rem;
-    width: 100%;
+  @media (max-width: 1000px) {
+    padding: 0 0.5rem;
+    width: 97%;
   }
 }
 .header__title {
-  width: 100rem;
+  width: 96rem;
   padding: 6rem 0;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   place-content: center;
   gap: 4rem;
-  &-div{
-    display: grid;
-  place-content: center;
-  gap: 4rem;
-  @media (max-width: 500px) {
-    place-content: start;
+  @media (max-width: 1000px) {
+    width: 97%;
+    gap: 0;
   }
+  &-div {
+    display: grid;
+    place-content: center;
+    gap: 4rem;
+    @media (max-width: 800px) {
+      place-content: start;
+    }
   }
   &-sub {
     padding-top: 3rem;

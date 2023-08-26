@@ -7,8 +7,15 @@
   align-items: center;
   background-color: #fff1da;
   border-top: 1px solid white;
+  @media (max-width: 950px) {
+    grid-template-columns: 15rem 15rem;
+  }
   & div {
+    width: 15rem;
     padding: 0 2rem;
+    @media(max-width:950px){
+      padding: 0;
+    }
     &:first-of-type {
       border-right: #181e4b solid 2px;
     }

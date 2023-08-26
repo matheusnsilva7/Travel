@@ -1,6 +1,3 @@
-header {
-  padding: 0 4rem;
-}
 .nav {
   display: flex;
   justify-content: space-between;
@@ -256,4 +253,12 @@ header {
   visibility: hidden;
   opacity: 0;
   transform: translateY(5rem);
+}
+.airplane {
+  width: 46rem;
+  height: 20rem;
+  transform: rotate(-49deg);
+  @media (max-width: 1000px) {
+    display: none;
+  }
 }
